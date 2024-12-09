@@ -3,6 +3,7 @@ import { Card } from "../../components/ui/card";
 import { Button } from "../../components/ui/button";
 import { Separator } from "../../components/ui/separator";
 import { ArrowLeft, Filter, Search } from "lucide-react";
+import liveAreaIcon from "../../assets/live-area.svg";
 
 export const Route = createLazyFileRoute("/ticket-history/")({
   component: TicketHistory,
@@ -134,7 +135,7 @@ function TicketHistory() {
                 <div className="col-span-2 text-right">
                   <div className="flex justify-end items-center gap-2">
                     <img
-                      src="/src/assets/live-area.svg"
+                      src={liveAreaIcon}
                       alt="Arrival Icon"
                       className="w-[20px] h-[20px]"
                     />
